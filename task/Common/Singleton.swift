@@ -18,8 +18,6 @@ class Singleton: NSObject {
     let consumer_key = "mobile_dev"
     let consumer_secret = "20891a1b4504ddc33d42501f9c8d2215fbe85008"
     
-    let appColor = UIColor(red: 37/255, green: 78/255, blue: 106/255, alpha: 1.0)
-
     func apiCall(apiType: String, apiURL: String, parameters: [String: Any], completion: @escaping ([String: Any]?, Error?) -> Void) {
         
         let url = URL(string: apiURL)!
